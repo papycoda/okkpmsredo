@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    {% include 'partials/headers.html' %}
+    {% include 'partials/navbar.html' %}
+  </head>
+  <body>
+
+    <div class = 'container-fluid'>
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    {% include 'partials/footer.html' %}
+  </body>
+</html>
