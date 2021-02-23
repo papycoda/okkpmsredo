@@ -1,0 +1,1 @@
+web: gunicorn okkpmsredo.wsgi --log-file -
