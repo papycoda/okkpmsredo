@@ -53,7 +53,7 @@ class Employee(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, default = None)
-    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, default = 'gbagada')
+    branch = models.ForeignKey(Branch, on_delete=models.CASCADE)
     designation = models.ForeignKey(Designation, on_delete=models.CASCADE)
     birth_date = models.DateField(null=True, blank=True)
     joining_date = models.DateField(null=True, blank=True)
